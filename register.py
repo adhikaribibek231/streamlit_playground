@@ -5,7 +5,7 @@ from utils import register_user
 
 st.set_page_config(page_title="Register")
 
-st.sidebar.button("Home", on_click=lambda: st.switch_page("home.py"))
+st.sidebar.button("Home", on_click=lambda: st.switch_page("streamlit_app.py"))
 st.sidebar.button("Login", on_click=lambda: st.switch_page("login.py"))
 st.sidebar.button("Register", on_click=lambda: st.switch_page("register.py"))
 
