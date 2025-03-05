@@ -23,7 +23,7 @@ st.markdown(
         }
     </style>
     <div class='nav-container'>
-        <a href='home.py'>🏠 Home</a>
+        <a href='#home'>🏠 Home</a>
         <a href='login.py'>🔑 Login</a>
         <a href='register.py'>📝 Register</a>
     </div>
