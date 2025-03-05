@@ -3,10 +3,33 @@ from utils import check_login_status
 
 st.set_page_config(page_title="Home")
 
-# Navigation buttons
-st.sidebar.button("Home", on_click=lambda: st.switch_page("streamlit_app.py"))
-st.sidebar.button("Login", on_click=lambda: st.switch_page("login.py"))
-st.sidebar.button("Register", on_click=lambda: st.switch_page("register.py"))
+# Navigation bar using a horizontal layout
+st.markdown(
+    """
+    <style>
+        .nav-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .nav-container a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+    </style>
+    <div class='nav-container'>
+        <a href='home.py'>🏠 Home</a>
+        <a href='login.py'>🔑 Login</a>
+        <a href='register.py'>📝 Register</a>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 
 st.title("Welcome to Home Page")
 
